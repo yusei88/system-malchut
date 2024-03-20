@@ -22,6 +22,7 @@ class MainApp extends StatelessWidget {
     String packageName = packageInfo.packageName;
     String version = packageInfo.version;
     String buildNumber = packageInfo.buildNumber;
+    const flavor = String.fromEnvironment('flavor');
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
@@ -29,6 +30,7 @@ class MainApp extends StatelessWidget {
             child: Column(
               children: [
                 const Text('Hello World!'),
+                const Text('flavor: $flavor'),
                 Text('appName: $appName'),
                 Text('packageName: $packageName'),
                 Text('version: $version'),

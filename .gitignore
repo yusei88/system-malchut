@@ -52,3 +52,6 @@ lib/firebase_options.dart
 ios/firebase_app_id_file.json
 macos/firebase_app_id_file.json
 macos/Runner/GoogleService-Info.plist
+
+# DartDifines関連
+**/ios/Flutter/Dart-Defines.xcconfig
